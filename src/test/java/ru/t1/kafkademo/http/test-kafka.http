@@ -1,0 +1,4 @@
+POST http://localhost:8090/api/kafka/send?message=test4
+
+###
+POST http://localhost:8090/api/kafka/send

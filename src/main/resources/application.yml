@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: kafka-demo
+  cloud:
+    stream:
+      bindings:
+        send-out-0:
+          destination: test-topic
+          contentType: text/plain
+        receive-in-0:
+          destination: test-topic
+          group: test-group
+          contentType: text/plain
+      kafka:
+        binder:
+          brokers: localhost:9092
+server:
+  port: 8090
